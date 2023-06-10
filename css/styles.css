@@ -492,7 +492,11 @@ body {
   margin-bottom: 16px;
 }
 .subsc-form-input {
-  width: 100%;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--background-color);
+  width: 264px;
   height: 40px;
 
   padding-left: 16px;
@@ -509,6 +513,9 @@ body {
   border-color: var(--secondary-background-color-icons);
   outline: none;
 }
+.subsc-form-input::placeholder {
+  color: var(--background-color);
+}
 
 .subsc-form-btn {
   font-family: var(--primary-font);
@@ -522,6 +529,7 @@ body {
 
   letter-spacing: 0.04em;
   min-width: 165px;
+  height: 40px;
   margin: 0 auto;
 
   border: none;
@@ -529,7 +537,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+}
+.subsc-form-icon {
+  margin-left: 16px;
 }
 /* PORTFOLIO FILTERS */
 .portfolio-container {
@@ -723,9 +733,10 @@ body {
 }
 .contact-form-icon {
   position: absolute;
-  left: 14px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 .contact-form-input {
   width: 100%;
@@ -734,6 +745,9 @@ body {
   border-radius: 4px;
   padding-left: 38px;
   outline: transparent;
+  background-color: transparent;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .contact-frm-msg::placeholder {
@@ -759,13 +773,14 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
 
   color: #8e8f99;
   margin-bottom: 4px;
+  display: block;
 }
-.order-form-field:not(:last-child) {
-  margin-bottom: 8px;
+.order-form-field {
+  margin-bottom: 24px;
 }
 .input-wrap {
   position: relative;
@@ -819,8 +834,11 @@ body {
   padding-bottom: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   resize: none;
   outline: transparent;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 .check-text {
   display: flex;
@@ -833,7 +851,7 @@ body {
   color: #8e8f99;
   margin-bottom: 24px;
 }
-.check-text .custom-check {
+.custom-check {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -849,10 +867,11 @@ body {
     fill var(--transition-duration) var(--transition-timing-function);
 }
 .order-form-check:checked + .check-text .custom-check {
-  background-color: var(--secondary-background-color-icons);
+  background-color: var(--accent-color);
   border: none;
   fill: var(--background-color-icons);
 }
+
 .order-form-field .contact-frm-msg:focus::placeholder {
   color: var(--secondary-background-color-icons);
 }
