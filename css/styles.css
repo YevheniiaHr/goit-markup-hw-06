@@ -780,7 +780,10 @@ body {
   display: block;
 }
 .order-form-field {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+}
+.order-form-field-comment {
+  margin-bottom: 16px;
 }
 .input-wrap {
   position: relative;
@@ -841,8 +844,6 @@ body {
     var(--transition-timing-function);
 }
 .check-text {
-  display: flex;
-  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
