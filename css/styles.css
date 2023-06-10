@@ -879,7 +879,8 @@ body {
 .contact-frm-msg:focus {
   border-color: var(--secondary-background-color-icons);
 }
-.order-form-icon {
+.order-form-field-check {
+  margin-bottom: 24px;
 }
 .privacy-policy-link {
   font-family: inherit;
