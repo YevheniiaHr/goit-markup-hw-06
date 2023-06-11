@@ -805,7 +805,6 @@ body {
 .contact-form-btn:hover,
 .contact-form-btn:focus {
   background-color: var(--accent-color);
-  color: var(--primary-color-text);
 }
 
 .contact-frm-msg {
@@ -817,7 +816,6 @@ body {
 
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  color: var(--primary-color-text);
 
   width: 100%;
   height: 120px;
@@ -884,6 +882,7 @@ body {
 }
 .contact-frm-msg:focus {
   border-color: var(--secondary-background-color-icons);
+  color: var(--primary-color-text);
 }
 .order-form-field-check {
   margin-bottom: 24px;
