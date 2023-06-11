@@ -751,18 +751,6 @@ body {
     var(--transition-timing-function);
 }
 
-.contact-frm-msg::placeholder {
-  font-family: var(--primary-font);
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-
-  letter-spacing: 0.04em;
-
-  color: rgba(46, 47, 66, 0.4);
-  transition: color var(--transition-duration) var(--transition-timing-function);
-}
 .contact-form-input:focus {
   border-color: var(--secondary-background-color-icons);
 }
@@ -817,9 +805,18 @@ body {
 .contact-form-btn:hover,
 .contact-form-btn:focus {
   background-color: var(--accent-color);
+  color: var(--primary-color-text);
 }
 
 .contact-frm-msg {
+  font-family: var(--primary-font);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   color: var(--primary-color-text);
 
   width: 100%;
@@ -838,12 +835,18 @@ body {
   transition: border-color var(--transition-duration)
     var(--transition-timing-function);
 }
+
 .contact-frm-msg::placeholder {
+  font-family: var(--primary-font);
+
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
 
   letter-spacing: 0.04em;
+
   color: rgba(46, 47, 66, 0.4);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .check-text {
