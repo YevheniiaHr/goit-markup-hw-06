@@ -739,6 +739,7 @@ body {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 .contact-form-input {
+  color: var(--primary-color-text);
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -819,12 +820,7 @@ body {
 }
 
 .contact-frm-msg {
-  font-size: 12px;
-  line-height: 1.17;
-
-  letter-spacing: 0.04em;
-  /* color: var(--primary-color-text);  */
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--primary-color-text);
 
   width: 100%;
   height: 120px;
@@ -842,6 +838,14 @@ body {
   transition: border-color var(--transition-duration)
     var(--transition-timing-function);
 }
+.contact-frm-msg::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
 .check-text {
   font-weight: 400;
   font-size: 12px;
