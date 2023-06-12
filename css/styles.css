@@ -761,8 +761,19 @@ body {
   letter-spacing: 0.04em;
 
   color: #8e8f99;
+  margin-bottom: 4px;
 
   display: block;
+}
+.input-label-comment {
+  display: block;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: #8e8f99;
 }
 .order-form-field {
   margin-bottom: 8px;
