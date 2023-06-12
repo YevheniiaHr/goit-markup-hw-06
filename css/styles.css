@@ -161,9 +161,6 @@ body {
 .contacts-link:focus {
   color: #404bbf;
 }
-.contacts-link-mail {
-  margin-right: 40px;
-}
 
 /* HERO */
 
@@ -360,13 +357,12 @@ body {
   margin-top: 72px;
 }
 .customers-list-item {
-  width: calc((100%-120px) / 6);
-  height: 88px;
+  width: calc((100% - 120px) / 6);
 }
 .customers-list-item-link {
   display: flex;
-  width: 100%;
-  height: 100%;
+
+  height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   align-items: center;
@@ -765,7 +761,7 @@ body {
   letter-spacing: 0.04em;
 
   color: #8e8f99;
-  margin-bottom: 4px;
+
   display: block;
 }
 .order-form-field {
@@ -819,8 +815,7 @@ body {
 
   width: 100%;
   height: 120px;
-  margin-bottom: 16px;
-  margin-top: 4px;
+
   padding-right: 16px;
   padding-left: 16px;
   padding-top: 8px;
